@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF=8" />
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Micaella Bien | Portfolio</title>
         <meta
@@ -19,6 +19,97 @@
         <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="header">
+            <nav class="nav" aria-label="Main">
+                <a href="#hero" class="nav__logo">&lt;micaella.bien/&gt;</a>
+
+                <ul class="nav__links" id="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#certificates">certificates</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+
+                <button
+                    type="button"
+                    class="nav__theme-toggle"
+                    aria-label="Toggle theme"
+                ></button>
+
+                <button
+                    type="button"
+                    class="nav__menu-toggle"
+                    aria-label="Menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links"
+                >
+                    <span class="nav__menu-line"></span
+                    ><span class="nav__menu-line"></span>
+                </button>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="hero" class="hero">
+                <p class="hero__eyebrow">// portfolio — 2026</p>
+                <h1 class="hero__title">
+                    MICAELLA<br />BIEN<span
+                        class="hero__cursor"
+                        aria-hidden="true"
+                        >_</span
+                    >
+                </h1>
+                <p class="hero__subtitle">
+                    cs graduate. builder. problem solver.
+                </p>
+                <ul class="hero__actions">
+                    <li>
+                        <a
+                            href="#projects"
+                            class="hero__link hero__link--primary"
+                            >View Projects</a
+                        >
+                    </li>
+                    <li><a href="#contact" class="hero__link">Contact</a></li>
+                    <li>
+                        <a href="#" class="hero__link hero__link--muted"
+                            >Résumé <span aria-hidden="true">↗</span></a
+                        >
+                    </li>
+                </ul>
+                <p class="hero__location">Taguig City, Metro Manila, PH</p>
+            </section>
+            <section id="about" class="about" aria-labelledby="about-title">
+                <h2 id="about-title">About</h2>
+            </section>
+            <section
+                id="projects"
+                class="projects"
+                aria-labelledby="projects-title"
+            >
+                <h2 id="projects-title">Projects</h2>
+            </section>
+            <section
+                id="certificates"
+                class="certificates"
+                aria-labelledby="certificates-title"
+            >
+                <h2 id="certificates-title">Certificates</h2>
+            </section>
+            <section
+                id="contact"
+                class="contact"
+                aria-labelledby="contact-title"
+            >
+                <h2 id="contact-title">Get in Touch</h2>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__copyright">
+                &copy; 2026 Micaella Bien. All rights reserved.
+            </p>
+            <p class="footer__note">Built with coffee.</p>
+        </footer>
         <script src="js/main.js" defer></script>
     </body>
 </html>
