@@ -1,0 +1,87 @@
+:root {
+    /* Colors */
+    --color-background: #ffffff;
+    --color-text: #000000;
+    --color-border: #000000;
+    --color-muted: #888888;
+
+    /* Fonts */
+    --font-mono: 'DM Mono', monospace;
+    --font-sans: 'Inter', sans-serif;
+
+    /* Font Sizes */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 2.5rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+
+    color-scheme: light;
+}
+
+[data-theme='dark'] {
+    --color-background: #000000;
+    --color-text: #ffffff;
+    --color-border: #ffffff;
+    --color-muted: #666666;
+
+    color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition:
+        background-color 0.2s,
+        color 0.2s;
+}
+
+::selection {
+    background: var(--color-text);
+    color: var(--color-background);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
