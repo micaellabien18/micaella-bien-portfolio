@@ -185,6 +185,53 @@
                         Desktop
                     </button>
                 </div>
+
+                <ul class="projects__grid" id="projects-grid">
+                    <li class="projects__item">
+                        <article class="project-card" data-category="mobile">
+                            <img
+                                class="project-card__image"
+                                src="assets/images/"
+                                alt="Screenshot of the project home page"
+                                width="800"
+                                height="500"
+                                loading="lazy"
+                            />
+
+                            <p class="project-card__category">Mobile</p>
+                            <p class="project-card__meta">01 / 2025</p>
+                            <h3 class="project-card__title">SheProtect</h3>
+                            <p class="project-card__description">
+                                A safety-focused mobile application designed to
+                                help women report incidents, find nearby
+                                resources, and connect with community support
+                                networks in real time.
+                            </p>
+                            <ul class="project-card__stack">
+                                <li>Python</li>
+                                <li>React Native</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <div class="project-card__links">
+                                <a
+                                    href="https://github.com/micaellabien18"
+                                    class="project-card__link"
+                                    aria-label="SheProtect source code on GitHub"
+                                    >gh <span aria-hidden="true">→</span></a
+                                >
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                <button
+                    type="button"
+                    class="projects__more"
+                    aria-expanded="false"
+                    aria-controls="projects-grid"
+                >
+                    Show more projects
+                </button>
             </section>
 
             <section
